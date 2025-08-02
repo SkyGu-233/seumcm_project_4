@@ -1,0 +1,50 @@
+% \documentclass{cumcmthesis}
+\documentclass[withoutpreface,bwprint]{cumcmthesis} %去掉封面与编号页，电子版提交的时候使用。
+
+
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{url}   % 网页链接
+\usepackage{subcaption} % 子标题
+\title{全国大学生数学建模竞赛编写的 \LaTeX{} 模板}
+\tihao{A}
+\baominghao{}
+\schoolname{东南大学}
+\membera{顾晋宁}
+\memberb{徐睿正}
+\memberc{尹卓凡}
+\supervisor{}
+\yearinput{2025}
+\monthinput{08}
+\dayinput{02}
+
+\begin{document}
+
+    \maketitle
+    \begin{abstract}
+
+        \keywords{\TeX{}\quad  图片\quad   表格\quad  公式}
+    \end{abstract}
+
+    \section{问题重述}
+    \section{模型假设}
+    \section{符号说明}
+    \section{模型求解}
+    \section{模型检验}
+
+    %参考文献
+    \begin{thebibliography}{9}%宽度9
+        \bibitem[1]{liuhaiyang2013latex}
+        刘海洋.
+        \newblock \LaTeX {}入门\allowbreak[J].
+        \newblock 电子工业出版社, 北京, 2013.
+        \bibitem[2]{mathematical-modeling}
+        全国大学生数学建模竞赛论文格式规范 (2020 年 8 月 25 日修改).
+        \bibitem{3} \url{https://www.latexstudio.net}
+    \end{thebibliography}
+
+    \newpage
+    %附录
+    \begin{appendices}
+    \end{appendices}
+
+\end{document} 
