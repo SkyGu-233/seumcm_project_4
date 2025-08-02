@@ -29,6 +29,129 @@
     \section{模型假设}
     \section{符号说明}
     \section{模型求解}
+    \subsection{着陆准备轨道的建模}
+    当嫦娥三号在着陆准备轨道上运动时，主要受到月球对其的引力；
+    而其它天体的引力及耗散力极其微弱，可以忽略不计。
+    因此，将运动过程简化为飞行器与月球的两体运动。
+    在月球系下，飞行器围绕月球做椭圆轨道运动，
+    其运动轨迹如图\ref{fig:tuo_yuan_gui_dao}所示。
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=.6\textwidth]{椭圆轨道}
+        \caption{着陆准备轨道示意图}
+        \label{fig:tuo_yuan_gui_dao}
+    \end{figure}
+
+
+    由角动量守恒定律与能量守恒定律可得
+    \begin{equation}
+        \begin{cases}
+            m_0 v_Nr_N = m_0v_Fr_F \\
+            \frac{1}{2} m_0 v_N^2 - \frac{GMm_0}{r_N} = \frac{1}{2} m_0 v_F^2 - \frac{GMm_0}{r_F}
+        \end{cases}
+    \end{equation}
+    故
+    \begin{equation}
+        v_F = \frac{r_N}{r_F} v_N
+        \label{eq:v_eq}
+    \end{equation}
+    \begin{equation*}
+        v_N^2 - v_F^2 = 2GM(\frac{1}{r_N} - \frac{1}{r_F})
+    \end{equation*}
+    将(\ref{eq:v_eq})式代入得
+    \begin{equation*}
+        (1 - \frac{r_N^2}{r_F^2})v_N^2 = 2GM(\frac{1}{r_N} - \frac{1}{r_F})
+    \end{equation*}
+    因此
+    \begin{equation}
+        \boxed{
+            v_N = \sqrt{\frac{2GMr_F}{r_N(r_N + r_F)}}
+        }
+    \end{equation}
+    \subsection{主减速段轨道的建模}
+    当飞行器到达近月点$N$时，其将转轨进入主减速段轨道。
+    由题意可知，该段轨道的几何形状为抛物线。
+    因此，飞行器在该段内具有恒定的受力。
+    即
+    \[
+        m\vec{g} + \vec{T} \equiv \vec{C}
+    \]
+
+
+    而轨道初速度应与近月点相同，即
+    \[
+        \vec{v_0} = \vec{v_N}
+    \]
+
+
+    此外，题目还要求了主减速末端的速率$v_1$为一确定值。
+
+
+    综上，轨道形状大致如图\ref{fig:jian_su_gui_dao}所示。
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=.6\textwidth]{减速轨道}
+        \caption{主减速段轨道示意图}
+        \label{fig:jian_su_gui_dao}
+    \end{figure}
+
+    
+    飞行器在该轨道内的运动过程时间较短，
+    在球面方向内的运动距离相对月球半径较小。
+    因此，可以将该过程近似至一直角坐标系内，
+    竖直向下记为x轴正方向，球面方向记作y轴，如图\ref{fig:zhu_jian_su_duan_jian_xi}所示。
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=.6\textwidth]{主减速段建系}
+        \caption{主减速段在直角坐标系中的近似}
+        \label{fig:zhu_jian_su_duan_jian_xi}
+    \end{figure}
+
+
+    此外，由于该过程中，距月心的距离变化$\Delta r$相对月球半径$R$的相对变化较小，
+    故可以将重力加速度近似为一常量，其值取高度中值处的重力加速度$g$。
+    
+
+    该阶段飞行器的受力情况，如图\ref{fig:zhu_jian_su_shou_li}所示。
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=.6\textwidth]{主减速受力}
+        \caption{飞行器在主减速段的受力情况}
+        \label{fig:zhu_jian_su_shou_li}
+    \end{figure}
+
+
+    因此，可以列得牛顿第二定律
+    \begin{equation}
+        \begin{cases}
+            T_x + mg = m a_x \\
+            T_y = m a_y
+            \label{eq:niu_er}
+        \end{cases}
+    \end{equation}
+    同时，满足比冲公式
+    \begin{equation*}
+        T = v_e |\dot{m}|
+    \end{equation*}
+    设质量减少的速率为$v_m$，因此
+    \begin{equation}
+        \boxed{
+            v_m = |\dot{m}| = \frac{T}{v_e} = \frac{\sqrt{T_x^2 + T_y^2}}{v_e}
+        }
+    \end{equation}
+    则质量关于时间的函数$m(t)$满足
+    \begin{equation}
+        m(t) = m_0 - v_m t
+        \label{eq:m_t}
+    \end{equation}
+    将(\ref{eq:m_t})式代入(\ref{eq:niu_er})式，整理后得
+    \begin{equation}
+        \begin{cases}
+            \ddot{x} = g + \frac{T_x}{m_0 - v_m t} \\
+            \ddot{y} = \frac{T_y}{m_0 - v_m t}
+        \end{cases}
+    \end{equation}
+    
     \section{模型检验}
 
     %参考文献

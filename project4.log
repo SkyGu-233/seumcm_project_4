@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.16)  2 AUG 2025 11:29
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.16)  3 AUG 2025 03:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1183,7 +1183,99 @@ Package fontspec Info:
 [1
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <12.05> on input line 38.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 32.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 32.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 32.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 32.
+
+File: figures/椭圆轨道.png Graphic file (type bmp)
+<figures/椭圆轨道.png>
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'SimSun(1)' created for font 'SimSun' with
+(fontspec)             options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
+
+
+LaTeX Font Warning: Font shape `TU/SimSun(1)/b/n' undefined
+(Font)              using `TU/SimSun(1)/m/n' instead on input line 41.
+
+LaTeX Font Info:    Calculating math sizes for size <12.05> on input line 47.
+
+
+[2]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00876pt
+(hyperref)                removed on input line 71.
+
+File: figures/减速轨道.png Graphic file (type bmp)
+<figures/减速轨道.png>
+File: figures/主减速段建系.png Graphic file (type bmp)
+<figures/主减速段建系.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[3]
+File: figures/主减速受力.png Graphic file (type bmp)
+<figures/主减速受力.png>
+
+
+[4]
+
+LaTeX Warning: Reference `eq:m_t' on page 5 undefined on input line 147.
+
+
+LaTeX Warning: Reference `eq:niu_er' on page 5 undefined on input line 147.
+
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "FangSong/BI" (it probably
@@ -1212,7 +1304,7 @@ Package fontspec Info:
 
 
 
-[2]
+[5]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 8.
 See the caption package documentation for explanation.
@@ -1224,21 +1316,24 @@ L3 programming layer <2022/08/05>
  ***********
 
 
-Package rerunfilecheck Warning: File `project4.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: Checksums for `project4.out':
-(rerunfilecheck)             Before: 152940978E2994328527AADBF36543E5;75
-(rerunfilecheck)             After:  BB02D5EF533D50482AF66459CBED7736;565.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `project4.out' has not changed.
+(rerunfilecheck)             Checksum: 3B834E548B398458557B4D3E2F61BEF4;867.
  ) 
 Here is how much of TeX's memory you used:
- 32831 strings out of 470231
- 683729 string characters out of 5487678
- 1073699 words of memory out of 5000000
- 58895 multiletter control sequences out of 15000+600000
- 644205 words of font info for 156 fonts, out of 8000000 for 9000
+ 32987 strings out of 470231
+ 688508 string characters out of 5487678
+ 1079698 words of memory out of 5000000
+ 59040 multiletter control sequences out of 15000+600000
+ 644261 words of font info for 163 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,5n,125p,471b,484s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,8n,125p,471b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on project4.pdf (2 pages).
+Output written on project4.pdf (5 pages).
