@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.16)  3 AUG 2025 03:16
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.16)  3 AUG 2025 03:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1271,12 +1271,6 @@ File: figures/主减速受力.png Graphic file (type bmp)
 
 [4]
 
-LaTeX Warning: Reference `eq:m_t' on page 5 undefined on input line 147.
-
-
-LaTeX Warning: Reference `eq:niu_er' on page 5 undefined on input line 147.
-
-
 Package fontspec Info: 
 (fontspec)             Could not resolve font "FangSong/BI" (it probably
 (fontspec)             doesn't exist).
@@ -1318,21 +1312,15 @@ L3 programming layer <2022/08/05>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `project4.out' has not changed.
 (rerunfilecheck)             Checksum: 3B834E548B398458557B4D3E2F61BEF4;867.
  ) 
 Here is how much of TeX's memory you used:
- 32987 strings out of 470231
- 688508 string characters out of 5487678
+ 32985 strings out of 470231
+ 688412 string characters out of 5487678
  1079698 words of memory out of 5000000
- 59040 multiletter control sequences out of 15000+600000
- 644261 words of font info for 163 fonts, out of 8000000 for 9000
+ 59039 multiletter control sequences out of 15000+600000
+ 644253 words of font info for 162 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  108i,8n,125p,471b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
