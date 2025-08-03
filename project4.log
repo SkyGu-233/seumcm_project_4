@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.16)  3 AUG 2025 03:18
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.16)  3 AUG 2025 16:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1271,6 +1271,8 @@ File: figures/主减速受力.png Graphic file (type bmp)
 
 [4]
 
+[5]
+
 Package fontspec Info: 
 (fontspec)             Could not resolve font "FangSong/BI" (it probably
 (fontspec)             doesn't exist).
@@ -1298,7 +1300,7 @@ Package fontspec Info:
 
 
 
-[5]
+[6]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 8.
 See the caption package documentation for explanation.
@@ -1316,12 +1318,12 @@ Package rerunfilecheck Info: File `project4.out' has not changed.
 (rerunfilecheck)             Checksum: 3B834E548B398458557B4D3E2F61BEF4;867.
  ) 
 Here is how much of TeX's memory you used:
- 32985 strings out of 470231
- 688412 string characters out of 5487678
- 1079698 words of memory out of 5000000
- 59039 multiletter control sequences out of 15000+600000
+ 32989 strings out of 470231
+ 688499 string characters out of 5487678
+ 1086699 words of memory out of 5000000
+ 59043 multiletter control sequences out of 15000+600000
  644253 words of font info for 162 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,8n,125p,471b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,15n,125p,471b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on project4.pdf (5 pages).
+Output written on project4.pdf (6 pages).

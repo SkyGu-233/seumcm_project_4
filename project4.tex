@@ -73,15 +73,17 @@
     由题意可知，该段轨道的几何形状为抛物线。
     因此，飞行器在该段内具有恒定的受力。
     即
-    \[
+    \begin{equation}
         m\vec{g} + \vec{T} \equiv \vec{C}
-    \]
+        \label{eq:heng_li}
+    \end{equation}
 
 
     而轨道初速度应与近月点相同，即
     \[
-        \vec{v_0} = \vec{v_N}
+        \vec{v}_0 = \vec{v}_N
     \]
+    记近月点的速率为$v_0$，故$\| \vec{v}_N \| = v_0$
 
 
     此外，题目还要求了主减速末端的速率$v_1$为一确定值。
@@ -110,6 +112,8 @@
 
     此外，由于该过程中，距月心的距离变化$\Delta r$相对月球半径$R$的相对变化较小，
     故可以将重力加速度近似为一常量，其值取高度中值处的重力加速度$g$。
+    此时，由恒力条件(\ref{eq:heng_li})式进一步分析，知$T$近似为一恒力。
+    设$T$在$x,y$轴上的分量分别为$T_x, T_y$。
     
 
     该阶段飞行器的受力情况，如图\ref{fig:zhu_jian_su_shou_li}所示。
@@ -151,6 +155,75 @@
             \ddot{y} = \frac{T_y}{m_0 - v_m t}
         \end{cases}
     \end{equation}
+    两边同时积分
+    \begin{equation*}
+        \begin{cases}
+            \dot{x} = gt - \frac{T_x}{v_m}\ln(m_0 - v_m t) + C_1 \\
+            \dot{y} = -\frac{T_y}{v_m}\ln(m_0 - v_m t) + C_2
+        \end{cases}
+    \end{equation*}
+    代入初值条件
+    \begin{equation*}
+        \begin{cases}
+            v_{0,x} = 0 \\
+            v_{0,y} = v_0
+        \end{cases}
+    \end{equation*}
+    解得
+    \begin{equation*}
+        \begin{cases}
+            C_1 = \frac{T_x}{v_m}\ln m_0\\
+            C_2 = v_0 + \frac{T_y}{v_m}\ln m_0
+        \end{cases}
+    \end{equation*}
+    代回得
+    \begin{equation}
+        \begin{cases}
+            \dot{x} = \frac{T_x}{v_m}\ln m_0 + gt - \frac{T_x}{v_m}\ln(m_0 - v_m t) \\
+            \dot{y} = v_0 + \frac{T_y}{v_m}\ln m_0 - \frac{T_y}{v_m}\ln(m_0 - v_m t)
+        \end{cases}
+    \end{equation}
+    取定积分得
+    \begin{equation}
+        \begin{cases}
+            \Delta x = \frac{T_x}{v_m}\ln m_0 \cdot t + \frac{1}{2}gt^2
+            - \frac{T_x}{v_m}((t - \frac{m_0}{v_m})\ln(m_0 - v_m t) - t) \\
+            \Delta y = (v_0 + \frac{T_y}{v_m}\ln m_0) t
+            - \frac{T_y}{v_m}((t - \frac{m_0}{v_m})\ln(m_0 - v_m t) - t)
+        \end{cases}
+    \end{equation}
+    由于$\Delta x$为一定值，在给定的$T_x,T_y$条件下，可以算得时间$t$。
+    由该$t$下的$\dot{x},\dot{y}$可以算得速率$v_1$，
+    综合各个条件，可以得到优化模型
+    \begin{equation}
+        \begin{aligned}
+            & \max m_1 = m_0 - v_m t \\
+            s.t. &
+            \begin{cases}
+                T = \sqrt{T_x^2 + T_y^2} \\
+                v_m = \frac{T}{v_e} \\
+                \Delta x = \frac{T_x}{v_m}\ln m_0 \cdot t + \frac{1}{2}gt^2
+                - \frac{T_x}{v_m}((t - \frac{m_0}{v_m})\ln(m_0 - v_m t) - t) \\
+                \dot{x} = \frac{T_x}{v_m}\ln m_0 + gt - \frac{T_x}{v_m}\ln(m_0 - v_m t) \\
+                \dot{y} = v_0 + \frac{T_y}{v_m}\ln m_0 - \frac{T_y}{v_m}\ln(m_0 - v_m t) \\
+                v_1 = \sqrt{\dot{x}^2 + \dot{y}^2} \\
+                1500 \le T \le 7500
+            \end{cases}
+        \end{aligned}
+    \end{equation}
+    设该NLP问题的解为$(T_x, T_y, t)$，由式
+    \begin{equation*}
+        \Delta y = (v_0 + \frac{T_y}{v_m}\ln m_0) t
+        - \frac{T_y}{v_m}((t - \frac{m_0}{v_m})\ln(m_0 - v_m t) - t)
+    \end{equation*}
+    求得水平位移$\Delta y$。
+    而通过水平位移以及轨道方向，可以得到近月点与目标着陆点的经纬度偏差。
+    \subsection{月球经纬度偏差的求解}
+    \subsection{快速调整阶段的建模}
+    \subsection{粗避障段的建模}
+    \subsection{精避障段的建模}
+    \subsection{缓速下降段的建模}
+    \subsection{}
     
     \section{模型检验}
 
